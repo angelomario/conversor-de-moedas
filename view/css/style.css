@@ -1,0 +1,27 @@
+@font-face {
+    font-family: Nunito;
+    src: url("../Fonts/Nunito/Nunito-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: Roboto;
+    src: url("../Fonts/Roboto/Roboto-Regular.ttf");
+}
+*{
+    font-family: Nunito, sans-serif;
+    font-weight: 500;
+    user-select: none;
+    outline: 0;
+}
+input{
+    outline: none;
+}
+.money h2:nth-child(odd){
+    font-weight: bolder;
+    color: #080880;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
