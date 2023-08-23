@@ -25,7 +25,7 @@ https ://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/[codigo_recurso]?
 /*
 https://cdn.moeda.info/api/latest.json
 
-Source: https://moeda.info/pages/api
+Source: https://moeda.info/pages/api?base=USD&symbols=BRL
 {
     "base": "USD",
     "rates": {
@@ -45,7 +45,10 @@ Source: https://moeda.info/pages/api
 
 */
 
-let url="https://cdn.moeda.info/api/latest.json";
-fetch(url).then((data)=>{
-    console.log(data);
+let url="https://cdn.moeda.info/api/latest";
+fetch(url).then((content)=>{
+    return content.json();
+    console.log(content);
+}).then(dados=>{
+    console.log(dados);
 })
