@@ -11,9 +11,16 @@
     font-weight: 500;
     user-select: none;
     outline: 0;
+    box-sizing: border-box !important;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
 }
 input{
     outline: none;
+}
+body{
+    transition: 0.3s ease;
 }
 .money h2:nth-child(odd){
     font-weight: bolder;
@@ -24,4 +31,41 @@ input{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+.mode{ 
+    position: absolute;
+    font-weight: bolder;
+    bottom: 6px;
+    right: 15px;
+    width: 55px;
+    height: 26.5px;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4c4d4d;
+    transition: .3s;
+}
+
+.role{
+    width: 15px;
+    height: 15px;
+    padding: 10px;
+    border-radius:500px;
+    background-color: #006eff;
+    position: absolute;
+    left: 2px;
+    transition: 0.3s ease-in-out;
+}
+.translate{
+    transform: translateX(calc(55px - 25px));
+}
+.rotate-90{
+    transform: rotate(90deg);
+}
+.fa-sun{
+    color: #ffd904;
+}
+.fa-moon{
+    color: #aaa6a6;
 }

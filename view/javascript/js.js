@@ -1,3 +1,19 @@
+// Dark and light mode
+document.querySelector(".mode").addEventListener("click",()=>{
+    let bola = document.querySelector(".role");
+    if(bola.getAttribute("class") == "role"){
+        bola.classList.add("translate");
+        document.body.classList.add("bg-dark");
+    }else{
+        bola.classList.remove("translate");
+        document.body.classList.remove("bg-dark");
+
+    }
+});
+
+
+// Configurando a API
+
 //  "https://api.exchangeratesapi.io/latest?base=USD&symbols=BRL"
 
 /*
@@ -28,6 +44,7 @@ Source: https://moeda.info/pages/api
 Source: https://moeda.info/pages/api
 
 */
+
 let url="https://cdn.moeda.info/api/latest.json";
 fetch(url).then((data)=>{
     console.log(data);
