@@ -32,6 +32,7 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
 }
+/*Dark  and light mode options*/
 .mode{ 
     position: absolute;
     font-weight: bolder;
@@ -45,6 +46,25 @@ body{
     justify-content: space-between;
     background-color: #4c4d4d;
     transition: .3s;
+}
+.dark{
+    background-color: #010114ec;
+    color: #bbbbbb;
+}
+.white{
+    background-color: #bbbbbb;
+    columns: #010113;
+    transition: .3s;
+}
+.white:hover{
+    background-color: #bbbbbba6;
+    color: #010113;
+    transition: .3s;
+}
+
+.border-w{
+    border-color: #bbbbbb !important;
+    color: #bbbbbb !important;
 }
 
 .role{

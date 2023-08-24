@@ -1,9 +1,27 @@
 // Dark and light mode
 document.querySelector(".mode").addEventListener("click",()=>{
+    let send = document.getElementById("send");
     let bola = document.querySelector(".role");
+    let quadro = document.querySelector(".forma");
+    let dado = document.querySelectorAll(".valor");
+    let select = document.querySelectorAll(".seletion");
     if(bola.getAttribute("class") == "role"){
+        send.classList.remove("btn-outline-dark");
+
+        document.body.classList.add("dark");
         bola.classList.add("translate");
-        document.body.classList.add("bg-dark");
+        quadro.classList.add("dark");
+        quadro.classList.remove("bg-light");
+
+        select[0].classList.add("border-w");
+        select[1].classList.add("border-w");
+        dado[0].classList.remove("border-black");
+        dado[1].classList.remove("border-black");
+        dado[0].classList.add("border-w");
+        dado[1].classList.add("border-w");
+
+        send.classList.add("border-w");
+        
     }else{
         bola.classList.remove("translate");
         document.body.classList.remove("bg-dark");
@@ -45,10 +63,10 @@ Source: https://moeda.info/pages/api
 
 */
 
-let url="https://cdn.moeda.info/api/latest";
+/*let url="https://cdn.moeda.info/api/latest";
 fetch(url).then((content)=>{
     return content.json();
     console.log(content);
 }).then(dados=>{
     console.log(dados);
-})
+})*/
