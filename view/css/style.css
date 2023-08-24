@@ -47,14 +47,19 @@ body{
     background-color: #4c4d4d;
     transition: .3s;
 }
+.light-shadow {
+    box-shadow: 0rem 2rem 3rem #ffffff2d!important;
+}
 .dark{
-    background-color: #010114ec;
+    background-color: #000016e1;
     color: #bbbbbb;
 }
-.white{
-    background-color: #bbbbbb;
-    columns: #010113;
-    transition: .3s;
+.forma{
+    opacity: 0.9;
+}
+
+.transp{
+    background-color: transparent;
 }
 .white:hover{
     background-color: #bbbbbba6;
@@ -77,6 +82,7 @@ body{
     left: 2px;
     transition: 0.3s ease-in-out;
 }
+
 .translate{
     transform: translateX(calc(55px - 25px));
 }
