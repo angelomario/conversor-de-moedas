@@ -2,10 +2,7 @@
     font-family: Nunito;
     src: url("../Fonts/Nunito/Nunito-VariableFont_wght.ttf");
 }
-@font-face {
-    font-family: Roboto;
-    src: url("../Fonts/Roboto/Roboto-Regular.ttf");
-}
+
 *{
     font-family: Nunito, sans-serif;
     font-weight: 500;
