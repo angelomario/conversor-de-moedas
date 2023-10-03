@@ -44,8 +44,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #4c4d4d;
+    border: 2px solid #00ff00;
     transition: .3s;
+}
+.rg-green{
+    background-color: #00ff00;
 }
 .light-shadow {
     box-shadow: 0rem 2rem 3rem #ffffff2d!important;
@@ -69,18 +72,18 @@ body{
 }
 
 .role{
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     padding: 10px;
     border-radius:500px;
-    background-color: #006eff;
     position: absolute;
+    background-color: #00ff00;
     left: 2px;
     transition: 0.3s ease-in-out;
 }
 
 .translate{
-    transform: translateX(calc(55px - 25px));
+    transform: translateX(calc(55px - 27.5px));
 }
 .rotate-90{
     transform: rotate(90deg);
